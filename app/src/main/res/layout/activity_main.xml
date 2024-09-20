@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Banner Arriba -->
+    <ImageView
+        android:id="@+id/banner_arriba"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:scaleType="fitXY"
+        android:src="@color/green" />
+
+    <!-- Contenido Principal (Aquí puedes colocar el resto de tus elementos) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F8F0F0"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <!-- Aquí coloca el resto de tus elementos del layout principal -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="HISTORIA"
+            android:textColor="@android:color/black"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="CAPITAL"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <!-- Banner Abajo -->
+    <ImageView
+        android:id="@+id/banner_abajo"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:src="@color/green"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="17dp"
+            android:height="17dp"
+            android:viewportWidth="190"
+            android:viewportHeight="150">
+
+            <path
+                android:fillColor="#000000"
+                android:pathData="m 3.846316,85.33472
+                c 0,0 54.755015,-55.23648 92.805094,
+                -54.31592 38.05009,0.92059 94.66118,
+                46.03041 94.66118,46.03041 0,0 -63.10745,
+                44.18919 -96.51728,42.34794 -33.409834,
+                -1.84119 -90.948994,-34.06243
+                -90.948994,-34.06243 z" />
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="m 19.035134,83.31614
+                c 0,0 46.178092,-43.09468 78.267936,
+                -42.37648 32.08985,0.71824 79.83328,
+                35.91224 79.83328,35.91224 0,0 -53.22219,
+                34.47575 -81.39865,33.03924 -28.176442,
+                -1.43647 -76.702566,-26.575 -76.702566,-26.575 z" />
+            <path
+                android:fillColor="#000000"
+                android:pathData="m 115.96592,74.31837 a 20.758049,
+                19.239168 0 0 1 -20.75805,19.23917 20.758049,
+                19.239168 0 0 1 -20.758049,-19.23917 20.758049,
+                19.239168 0 0 1 20.758049,-19.23916 20.758049,
+                19.239168 0 0 1 20.75805,19.23916 z" />
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="m 92.8187,62.19913 a 6.3724685,
+                6.0144644 0 0 1 -6.372464,6.01446 6.3724685,
+                6.0144644 0 0 1 -6.372469,-6.01446 6.3724685,
+                6.0144644 0 0 1 6.372469,-6.01447 6.3724685,
+                6.0144644 0 0 1 6.372464,6.01447 z" />
+
+            <!-- Aplico una transformación de rotación -->
+            <group
+                android:pivotX="80"
+                android:pivotY="70"
+                android:rotation="42">
+                <path
+                    android:fillColor="#000000"
+                    android:pathData="m 95.07897,-31.752811 c 2.69734,0 4.86885,2.682451 4.86885,6.014464 V 147.53552 c 0,3.33201 -2.17151,6.01446 -4.86885,6.01446 -2.69735,0 -4.86886,-2.68245 -4.86886,-6.01446 V -25.738347 c 0,-3.332013 2.17151,-6.014464 4.86886,-6.014464 z" />
+            </group>
+
+            <group
+                android:pivotX="106"
+                android:pivotY="-32"
+                android:rotation="42">
+                <path
+                    android:fillColor="#ffffff"
+                    android:pathData="m 174.39528,-44.509296 h 5.88987 V 140.7935 h -5.88987 z" />
+            </group>
+        </vector>
+    </aapt:attr>
+</animated-vector>

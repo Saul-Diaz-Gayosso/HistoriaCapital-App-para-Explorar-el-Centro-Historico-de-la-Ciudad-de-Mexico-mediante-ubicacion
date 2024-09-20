@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="300"
+            android:viewportHeight="300">
+
+            <path
+                android:fillColor="#68bb67"
+                android:pathData="M 253.41499,145.74572
+                      A 103.40482,104.03534 0 0 1 150.01019,249.78106
+                      103.40482,104.03534 0 0 1 46.605392,145.74572
+                      103.40482,104.03534 0 0 1 150.01019,41.710415
+                      103.40482,104.03534 0 0 1 253.41499,145.74572 Z" />
+
+            <path
+                android:fillColor="#f7ee23"
+                android:pathData="M 89.206232,142.34994
+                      H 203.78399
+                      c 2.27052,0 4.09838,1.828 4.09838,4.09836
+                      0,2.27048 -1.828,4.09838 -4.09838,4.09838
+                      H 89.206232
+                      c -2.2705,0 -4.09836,-1.828 -4.09836,-4.09838
+                      0,-2.2705 1.8278,-4.09836 4.09836,-4.09836
+                      z" />
+
+            <path
+                android:fillColor="#f7ee23"
+                android:pathData="M 94.303572,136.44086
+                      L 141.399396,89.345043
+                      c 1.6056,-1.6056 4.19052,-1.6056 5.79596,0
+                      c 1.6056,1.6056 1.6056,4.190477 0,5.795957
+                      L 94.303572,147.44086
+                      c -1.6056,1.6056 -4.19048,1.6056 -5.79594,0
+                      c -1.6056,-1.6056 -1.6056,-4.19052 0,-5.795957
+                      z" />
+
+            <path
+                android:fillColor="#f7ee23"
+                android:pathData="m 92.099512,143.51022
+                      55.095824,47.09582
+                      c 1.6056,1.6056 1.6056,4.19052 0,5.79598
+                      -1.6056,1.6056 -4.1905,1.6056 -5.79596,0
+                      L 86.303532,149.30618
+                      c -1.6056,-1.6056 -1.6056,-4.1905 0,-5.79596
+                      1.6056,-1.6056 4.19052,-1.6056 5.79598,0
+                      z" />
+        </vector>
+    </aapt:attr>
+</animated-vector>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- User Icon and Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/user_icon"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User name"
+            android:textSize="21sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="38sp"
+                android:layout_height="38sp"
+                android:src="@drawable/close" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp">
+
+        <Spinner
+            android:id="@+id/placeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:spinnerMode="dropdown"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/estrella1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/estrella2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/estrella3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/estrella4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/star_empty" />
+
+        <ImageView
+            android:id="@+id/estrella5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/star_empty" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Score: 0/5"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agrega una descripción"
+        android:textSize="21sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black" />
+
+    <!-- ImageView for Selected Image -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/complete_rounded_card"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:maxLength="280"
+            />
+
+        <!-- Botones para multimedia y emojis -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/editTextDescription"
+            android:background="@android:color/black" />
+
+        <!-- Container for Media and Emoji -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDescription"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Media Section -->
+            <LinearLayout
+                android:id="@+id/btnMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/editTextDescription"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/buttonSelectImage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_media" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="8dp"
+                    android:text="Media"
+                    android:textSize="18sp"
+                    android:background="@null"
+                    android:hint="Emoji"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+            <!-- Emoji Section -->
+            <LinearLayout
+                android:id="@+id/btnEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextDescription"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Button to Submit Opinion -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="40dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F0F0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/banner_arriba"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:scaleType="fitXY"
+            android:src="@color/green" />
+
+        <TextView
+            android:id="@+id/textViewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="Centro Histórico de la Ciudad de México"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/btnBackarrow"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:src="@drawable/arrowback_icon"
+            android:layout_gravity="start" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_ultimo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/montserratbold"
+            android:gravity="center"
+            android:text="¡Lo último!"
+            android:textColor="@color/FadedBlack"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtVNombre"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Mantente enterado de noticias y novedades del Centro Histórico."
+                android:textColor="@color/FadedBlack"
+                android:gravity="center"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:id="@+id/noticiasContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="150dp">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

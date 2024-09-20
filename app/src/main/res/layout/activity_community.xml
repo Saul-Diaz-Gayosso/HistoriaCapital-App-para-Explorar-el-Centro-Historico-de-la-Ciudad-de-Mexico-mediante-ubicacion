@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Banner superior -->
+    <ImageView
+        android:id="@+id/banner_arriba"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:scaleType="fitXY"
+        android:src="@color/green"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewBanner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Centro Histórico de la Ciudad de México"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/xiv"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="13dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hamburger_icon" />
+    </LinearLayout>
+
+    <!-- Contenido central -->
+    <RelativeLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/banner_abajo"
+        app:layout_constraintTop_toBottomOf="@+id/banner_arriba"
+        android:background="#F8F0F0">
+
+
+
+        <RelativeLayout
+            android:id="@+id/containerTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F8F0F0">
+
+
+            <ImageView
+                android:id="@+id/btnPlus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:src="@drawable/plus_icon_yellow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/contentCentral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/containerTop"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Banner inferior -->
+    <ImageView
+        android:id="@+id/banner_abajo"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:scaleType="fitXY"
+        android:src="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/plusIcon"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/plus_black" />
+
+        <ImageView
+            android:id="@+id/saveIcon"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/save" />
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="44dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/user" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/banner_arriba"
+        android:visibility="gone" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_gravity="left"
+        app:layout_constraintBottom_toTopOf="@+id/banner_abajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_arriba"
+        app:menu="@menu/nav_menu"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

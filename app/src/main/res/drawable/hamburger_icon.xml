@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+
+            <!-- Barra superior -->
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M1,6h22v2h-22z" />
+
+            <!-- Barra del medio -->
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M1,12h22v2h-22z" />
+
+            <!-- Barra inferior -->
+            <path
+                android:fillColor="#ffffff"
+                android:pathData="M1,18h22v2h-22z" />
+        </vector>
+    </aapt:attr>
+</animated-vector>

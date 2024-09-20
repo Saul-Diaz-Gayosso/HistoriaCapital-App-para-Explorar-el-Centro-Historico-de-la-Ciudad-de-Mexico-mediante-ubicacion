@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/banner_arriba"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:scaleType="fitXY"
+            android:src="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewBanner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Centro Histórico de la Ciudad de México"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#F8F0F0"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnBackarrow"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:src="@drawable/arrowback_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="150dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="316dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/containerSignUp"
+                android:background="@drawable/background_rounded_shadow"
+                android:scaleType="fitXY"
+                android:src="@color/white" />
+
+
+            <LinearLayout
+                android:id="@+id/containerSignUp"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/email_icon" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="¿Desea cambiar su correo electrónico?"
+                    android:textColor="@color/FadedBlack"
+                    android:gravity="center"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/txtVNombre"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="Llene los campos y después presione el botón ''Continuar''."
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <EditText
+                        android:id="@+id/current_email_edit_text"
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginEnd="43dp"
+                        android:background="@drawable/background_rounded_black_border"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="49dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Correo electrónico actual"
+                        android:textColor="@color/grey"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/current_password_edit_text"
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginEnd="43dp"
+                        android:background="@drawable/background_rounded_black_border"
+                        android:inputType="textPassword"
+                        android:textSize="15dp" />
+
+                    <ImageView
+                        android:id="@+id/ivShowHidePassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="55dp"
+                        android:layout_marginTop="80dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/eye_close_icon" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="49dp"
+                        android:layout_marginTop="70dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Contraseña"
+                        android:textColor="@color/grey"
+                        android:textSize="10dp" />
+
+                    <EditText
+                        android:id="@+id/new_email_edit_text"
+                        android:layout_width="230dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="43dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginEnd="43dp"
+                        android:background="@drawable/background_rounded_black_border"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="49dp"
+                        android:layout_marginTop="140dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Correo electrónico nuevo"
+                        android:textColor="@color/grey"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/update_email_button"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="@color/green"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/ptsans"
+                    android:text="Continuar"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

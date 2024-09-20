@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F0F0">
+
+    <!-- Banner -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/banner_arriba"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:scaleType="fitXY"
+            android:src="@color/green" />
+
+        <TextView
+            android:id="@+id/textViewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="Centro Histórico de la Ciudad de México"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <!-- Fixed Back Arrow and Help Center -->
+    <LinearLayout
+        android:id="@+id/containerSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8F0F0"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/btnBackarrow"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:src="@drawable/arrowback_icon"
+            android:layout_marginLeft="13dp"
+            android:layout_gravity="start" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/faq_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:fontFamily="@font/montserratbold"
+            android:text="Centro de ayuda"
+            android:textColor="@color/FadedBlack"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtVNombre"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Respuestas a preguntas frecuentes sobre el uso y funcionalidades de la aplicación móvil"
+                android:textColor="@color/FadedBlack"
+                android:gravity="center"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="150dp">
+
+            <!-- FAQ 1 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿La aplicación es gratuita?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, Historia Capital es completamente gratuita. No hay ningún costo para descargarla o utilizar sus funciones. Queremos asegurarnos de que todos tengan acceso sin barreras económicas."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+            <!-- FAQ 2 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Por qué me solicitan el permiso de ubicación?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La aplicación requiere el permiso para mostrar los sitios de interés cercanos a tu ubicación. De esta manera, podemos ofrecerte una experiencia personalizada y ayudarte a descubrir lugares históricos relevantes en tu área. Ten en cuenta que respetamos tu privacidad y solo utilizamos tu ubicación para mejorar tu experiencia dentro de la aplicación."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+            <!-- FAQ 3 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Dónde puedo ver los términos y condiciones nuevamente?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puedes encontrar los términos y condiciones en nuestro sitio web en la siguiente dirección: www.historiacapital.site/terminos."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+            <!-- FAQ 4 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Para qué necesitan mi correo electrónico y contraseña?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historia Capital necesita estos datos para que puedas crear una cuenta y gestionar tu información en la aplicación. Tu correo electrónico nos permite identificar tu cuenta y enviarte notificaciones importantes, mientras que la contraseña asegura que tu cuenta se mantenga segura y privada. Es importante destacar que tus datos personales no se comparten con nadie y se mantienen seguros dentro de nuestra plataforma."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+            <!-- FAQ 5 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Cómo borro mi cuenta?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puedes borrar tu cuenta desde la sección 'Perfil', botón 'Eliminar mi cuenta'. Llena el formulario con los campos solicitados y luego presiona el botón 'Continuar' para confirmar la eliminación de tu cuenta."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+            <!-- FAQ 6 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿La aplicación está disponible para otros sistemas operativos?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Actualmente, la aplicación solo está disponible para smartphones con sistema operativo Android. Estamos evaluando la posibilidad de expandirnos a otras plataformas en el futuro."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+            <!-- FAQ 7 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Por qué solo hay sitios de interés en el centro histórico?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La aplicación se encuentra actualmente en una primera etapa de desarrollo. Conforme avancemos, planeamos implementar más zonas y ampliar el alcance para incluir una mayor variedad de sitios de interés histórico en diferentes áreas."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+            <!-- FAQ 8 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Se pueden usar tanto conexión WiFi como datos móviles?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, es correcto. La aplicación se puede utilizar tanto con conexión WiFi como con datos móviles, según tu preferencia o disponibilidad de conexión."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+            <!-- FAQ 9 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Dónde se guardan mis datos de usuario"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tus datos de usuario se guardan de manera segura en nuestros servidores. Nos tomamos muy en serio la privacidad y la seguridad de la información de nuestros usuarios."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+
+            <!-- FAQ 10 -->
+            <LinearLayout
+                android:id="@+id/layout_pregunta_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Qué debo hacer si no encuentro la información sobre un lugar que me interesa?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Puedes contactar a nuestro equipo de soporte vía correo electrónico a contacto@historiacapital.site, indicando tu inquietud o duda. El equipo de soporte estará encantado de ayudarte."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_pregunta_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="toggleAnswer">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line"
+                    android:layout_marginLeft="13dp"
+                    android:contentDescription="Icono de flecha hacia abajo"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¿Quién modera los comentarios de reseñas de la aplicación?"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/answer11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Los comentarios son moderados por el equipo de soporte y desarrollo de Historia Capital. Estamos comprometidos a mantener un entorno positivo y útil para todos nuestros usuarios."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserratbold"
+                    android:gravity="center"
+                    android:text="¿Aún tienes dudas?"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Haz clic en la imagen para enviarnos un correo electrónico."
+                android:textSize="18sp"
+                android:textColor="@color/newblue"
+                android:visibility="visible"
+                android:paddingStart="16dp"
+                android:layout_marginLeft="13dp"
+                android:paddingEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/contacto_soporte_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/inbox" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

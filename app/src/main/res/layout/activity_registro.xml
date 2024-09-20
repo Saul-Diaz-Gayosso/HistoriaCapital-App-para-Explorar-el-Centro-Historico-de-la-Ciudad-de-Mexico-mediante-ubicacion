@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Banner Arriba -->
+
+        <!-- TextView para el título -->
+        <ImageView
+            android:id="@+id/banner_arriba"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:scaleType="fitXY"
+            android:src="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Centro Histórico de la Ciudad de México"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F8F0F0"
+        android:orientation="vertical">
+
+        <!-- Aquí coloca el resto de tus elementos del layout principal -->
+
+        <ImageView
+            android:id="@+id/btnBackarrow"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="55dp"
+            android:gravity="center"
+            android:src="@drawable/arrowback_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="316dp"
+                android:layout_alignBottom="@id/containerSignUp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_rounded_shadow"
+                android:src="@color/white"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/containerSignUp"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtVCorreo"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="25dp"
+                    android:text="Correo electrónico"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/EdtCorreo"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/background_rounded_black_border"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/txtVNombre"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="20dp"
+                    android:text="Nombre completo"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/EdtNombre"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/background_rounded_black_border"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/txtVNombreusuario"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="20dp"
+                    android:text="Nombre de usuario"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/EdtNombreUsuario"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/background_rounded_black_border"
+                    android:textColor="@android:color/black"/>
+
+
+                <TextView
+                    android:id="@+id/txtVPassword"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="20dp"
+                    android:text="Contraseña"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/EdtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/background_rounded_black_border"
+                    android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:id="@+id/ivShowHidePassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/eye_close_icon"
+                        android:clickable="true"
+                        android:focusable="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtVPasswordConfirm"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="20dp"
+                    android:text="Confirmar contraseña"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/EdtPasswordConfirm"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:background="@drawable/background_rounded_black_border"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/ivShowHidePassword2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/eye_close_icon"
+                    android:clickable="true"
+                    android:focusable="true"/>
+                </RelativeLayout>
+
+
+                <CheckBox
+                    android:id="@+id/checkCondicion"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="20dp"
+                    android:text="Acepto las Condiciones y la Política de privacidad de Historia Capital"
+                    android:textColor="@color/FadedBlack"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtTerminosCondiciones"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Leer Condiciones y Política de Privacidad"
+                    android:textColor="@color/blue"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/BtnRegister"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ptsans"
+                    android:textSize="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Crear cuenta"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:backgroundTint="@drawable/btn_background_selector"
+                    android:textColor="@drawable/btn_text_color_selector"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/banner_abajo"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:scaleType="fitXY"
+        android:src="@color/green" />
+
+</LinearLayout>

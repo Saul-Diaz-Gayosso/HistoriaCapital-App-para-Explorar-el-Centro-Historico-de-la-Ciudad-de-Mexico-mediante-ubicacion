@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_item_salir"
+        android:title="Salir"
+        android:icon="@drawable/ic_salir" />
+
+    <item
+        android:id="@+id/nav_item_soporte"
+        android:title="Soporte técnico"
+        android:icon="@drawable/ic_soporte" />
+
+    <item
+        android:id="@+id/nav_item_ultimo"
+        android:title="Lo último"
+        android:icon="@drawable/ic_ultimo" />
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado cuando el botón está presionado -->
+    <item android:state_pressed="true" android:color="#FFFFFF"/> <!-- Color del texto cuando se presiona -->
+    <!-- Estado normal del botón -->
+    <item android:color="#000000"/> <!-- Color del texto en estado normal -->
+</selector>
