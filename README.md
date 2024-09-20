@@ -8,4 +8,4 @@ Además, la aplicación requiere la ubicación real y aproximada del dispositivo
 
 [La app no se encuentra subida en la Play Store, pero la puedes descargar desde aquí. Es un enlace hacia Google Drive.](https://drive.google.com/file/d/1HeN6xLzCxbXcArDZ66YDYSZ_wOcSxWkv/view?usp=sharing)
 
-¡Gracias por usar nuestra aplicación! Esperamos que disfrutes explorando el Centro Histórico de la Ciudad de México y que encuentres útil la información que proporcionamos. Si tienes alguna pregunta o sugerencia, no dudes en contactarnos vía e-mail: [saul.diaz.gayosso@gmail.com](saul.diaz.gayosso@gmail.com) y [javiermontu2912@hotmail.com](javiermontu2912@hotmail.com)
+¡Gracias por usar nuestra aplicación! Esperamos que disfrutes explorando el Centro Histórico de la Ciudad de México y que encuentres útil la información que proporcionamos. Si tienes alguna pregunta o sugerencia, no dudes en contactarnos vía e-mail: [saul.diaz.gayosso@gmail.com](mailto:saul.diaz.gayosso@gmail.com) y [javiermontu2912@hotmail.com](mailto:javiermontu2912@hotmail.com)
